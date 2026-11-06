@@ -5,7 +5,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="YA EVENTS offers elegant event planning and coordination across London. Weddings, Nikkahs, engagements and private celebrations.">
-<title>YA EVENTS | Carefully planned, effortlessly celebrated.</title>
+<title>YA EVENTS | Carefully planned. Effortlessly celebrated.</title>
+
 <style>
 :root {
   --cream:#f8f5ef;
@@ -14,17 +15,17 @@
   --ink:#39342f;
   --gold:#b49a72;
 }
-* { box-sizing:border-box; }
-html { scroll-behavior:smooth; }
+* {box-sizing:border-box;}
+html {scroll-behavior:smooth;}
 body {
   margin:0;
   background:var(--cream);
   color:var(--ink);
-  font-family:Arial, sans-serif;
+  font-family:Arial,sans-serif;
   line-height:1.7;
 }
 header {
-  padding:22px 7%;
+  padding:15px 7%;
   display:flex;
   justify-content:space-between;
   align-items:center;
@@ -34,10 +35,10 @@ header {
   top:0;
   z-index:10;
 }
-.logo {
-  font-family:Georgia,serif;
-  font-size:27px;
-  letter-spacing:4px;
+.brand-logo {
+  display:block;
+  width:125px;
+  height:auto;
 }
 nav a {
   color:var(--ink);
@@ -49,12 +50,18 @@ nav a {
 }
 .hero {
   min-height:590px;
-  padding:100px 8%;
+  padding:90px 8%;
   display:flex;
   flex-direction:column;
   justify-content:center;
+  align-items:center;
   text-align:center;
   background:linear-gradient(135deg,#eee6da,#faf7f1 55%,#e6d9c8);
+}
+.hero-logo {
+  width:min(300px,75%);
+  height:auto;
+  margin-bottom:28px;
 }
 .eyebrow {
   color:var(--taupe);
@@ -67,9 +74,9 @@ h1,h2,h3 {
   font-weight:normal;
 }
 h1 {
-  font-size:clamp(42px,7vw,76px);
-  line-height:1.12;
-  margin:22px auto;
+  font-size:clamp(35px,6vw,58px);
+  line-height:1.2;
+  margin:10px auto 20px;
   max-width:850px;
 }
 .hero p {
@@ -93,7 +100,7 @@ h1 {
   color:var(--ink);
   border:1px solid var(--taupe);
 }
-section { padding:85px 8%; }
+section {padding:85px 8%;}
 .section-heading {
   text-align:center;
   max-width:680px;
@@ -103,14 +110,14 @@ section { padding:85px 8%; }
   font-size:clamp(32px,5vw,47px);
   margin:10px 0;
 }
-.section-heading p { color:#756d63; }
+.section-heading p {color:#756d63;}
 .about {
   max-width:850px;
   margin:auto;
   text-align:center;
 }
-.about p { color:#6f675e; }
-.services { background:#eee8df; }
+.about p {color:#6f675e;}
+.services {background:#eee8df;}
 .cards {
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
@@ -123,14 +130,17 @@ section { padding:85px 8%; }
   padding:32px 25px;
   border:1px solid #e5ddd2;
 }
-.card h3 { font-size:25px; }
+.card h3 {font-size:25px;}
 .price {
   font-family:Georgia,serif;
   font-size:29px;
   color:var(--taupe);
 }
-.card p,.card li { color:#6f675e; font-size:14px; }
-.card ul { padding-left:18px; }
+.card p,.card li {
+  color:#6f675e;
+  font-size:14px;
+}
+.card ul {padding-left:18px;}
 .note {
   text-align:center;
   margin:35px auto 0;
@@ -142,8 +152,8 @@ section { padding:85px 8%; }
   background:#e6ddd0;
   text-align:center;
 }
-.consultation h2 { font-size:42px; }
-.consultation .price { font-size:35px; }
+.consultation h2 {font-size:42px;}
+.consultation .price {font-size:35px;}
 .weddings {
   text-align:center;
   background:#faf8f4;
@@ -166,8 +176,8 @@ section { padding:85px 8%; }
   color:var(--gold);
   font-size:34px;
 }
-.step h3 { font-size:23px; }
-.step p { color:#756d63; font-size:14px; }
+.step h3 {font-size:23px;}
+.step p {color:#756d63;font-size:14px;}
 .halal {
   background:#eee8df;
   text-align:center;
@@ -185,14 +195,14 @@ section { padding:85px 8%; }
   margin:30px auto;
   line-height:2.2;
 }
-.contact a { color:var(--taupe); }
+.contact a {color:var(--taupe);}
 form {
   max-width:600px;
   margin:35px auto 0;
   display:grid;
   gap:12px;
 }
-input,textarea,select {
+input,textarea {
   width:100%;
   padding:14px;
   border:1px solid #d8cec1;
@@ -200,7 +210,7 @@ input,textarea,select {
   font:inherit;
   color:var(--ink);
 }
-textarea { min-height:120px; }
+textarea {min-height:120px;}
 form button {
   border:0;
   cursor:pointer;
@@ -213,28 +223,41 @@ form button {
 footer {
   background:var(--ink);
   color:#eee7dc;
-  padding:35px 8%;
+  padding:45px 8%;
   text-align:center;
   font-size:12px;
 }
-footer .footer-logo {
-  font-family:Georgia,serif;
-  letter-spacing:4px;
-  font-size:24px;
+.footer-logo {
+  width:135px;
+  max-width:65%;
+  height:auto;
+  margin-bottom:12px;
 }
-footer a { color:#e8d9c4; }
+footer a {color:#e8d9c4;}
 @media(max-width:650px) {
-  header { flex-direction:column; gap:12px; }
-  nav a { margin:0 7px; font-size:10px; }
-  .hero { min-height:500px; padding:75px 7%; }
-  section { padding:65px 7%; }
+  header {
+    flex-direction:column;
+    gap:12px;
+  }
+  nav a {
+    margin:0 7px;
+    font-size:10px;
+  }
+  .hero {
+    min-height:500px;
+    padding:70px 7%;
+  }
+  section {padding:65px 7%;}
 }
 </style>
 </head>
+
 <body>
 
 <header>
-  <div class="logo">YA EVENTS</div>
+  <a href="#home">
+    <img class="brand-logo" src="logo.jpeg" alt="YA EVENTS logo">
+  </a>
   <nav>
     <a href="#about">About</a>
     <a href="#services">Services</a>
@@ -244,9 +267,11 @@ footer a { color:#e8d9c4; }
 </header>
 
 <main>
-<section class="hero">
+
+<section class="hero" id="home">
+  <img class="hero-logo" src="logo.jpeg" alt="YA EVENTS">
   <div class="eyebrow">Event Planning & Coordination · London</div>
-  <h1>Every detail,<br>beautifully planned.</h1>
+  <h1>Carefully planned.<br>Effortlessly celebrated.</h1>
   <p>Thoughtful event planning for life's most meaningful celebrations. Personal, considered and beautifully organised.</p>
   <div>
     <a class="button" href="#contact">Enquire Now</a>
@@ -269,6 +294,7 @@ footer a { color:#e8d9c4; }
     <h2>Planning made personal</h2>
     <p>Choose the level of planning support that suits your celebration.</p>
   </div>
+
   <div class="cards">
     <article class="card">
       <div class="eyebrow">Intimate celebrations</div>
@@ -282,6 +308,7 @@ footer a { color:#e8d9c4; }
         <li>Event schedule planning</li>
       </ul>
     </article>
+
     <article class="card">
       <div class="eyebrow">Growing celebrations</div>
       <h3>Medium Events</h3>
@@ -294,6 +321,7 @@ footer a { color:#e8d9c4; }
         <li>Event timeline and logistics</li>
       </ul>
     </article>
+
     <article class="card">
       <div class="eyebrow">Larger occasions</div>
       <h3>Large Events</h3>
@@ -307,6 +335,7 @@ footer a { color:#e8d9c4; }
       </ul>
     </article>
   </div>
+
   <p class="note">Introductory planning fees. Final quotes depend on your event, requirements and agreed scope. Events over 200 guests are quoted individually. Prices cover planning services only, not venue or supplier costs, décor, styling, setup or event-day attendance.</p>
 </section>
 
@@ -332,11 +361,28 @@ footer a { color:#e8d9c4; }
     <h2>Simple from the start</h2>
     <p>A clear, considered approach to planning your event.</p>
   </div>
+
   <div class="steps">
-    <div class="step"><div class="step-number">01</div><h3>Enquire</h3><p>Tell us about your event and what you have in mind.</p></div>
-    <div class="step"><div class="step-number">02</div><h3>Consult</h3><p>We'll discuss your vision, priorities and budget.</p></div>
-    <div class="step"><div class="step-number">03</div><h3>Proposal</h3><p>Receive a tailored proposal and clear planning fee.</p></div>
-    <div class="step"><div class="step-number">04</div><h3>Plan</h3><p>We help organise the details and keep things on track.</p></div>
+    <div class="step">
+      <div class="step-number">01</div>
+      <h3>Enquire</h3>
+      <p>Tell us about your event and what you have in mind.</p>
+    </div>
+    <div class="step">
+      <div class="step-number">02</div>
+      <h3>Consult</h3>
+      <p>We'll discuss your vision, priorities and budget.</p>
+    </div>
+    <div class="step">
+      <div class="step-number">03</div>
+      <h3>Proposal</h3>
+      <p>Receive a tailored proposal and clear planning fee.</p>
+    </div>
+    <div class="step">
+      <div class="step-number">04</div>
+      <h3>Plan</h3>
+      <p>We help organise the details and keep things on track.</p>
+    </div>
   </div>
 </section>
 
@@ -350,6 +396,7 @@ footer a { color:#e8d9c4; }
   <div class="eyebrow">Let's begin</div>
   <h2 style="font-size:44px;">Tell us what you're planning</h2>
   <p>We'd love to hear about your celebration.</p>
+
   <div class="contact-details">
     <div><strong>Email:</strong> <a href="mailto:yaevents@gmail.com">yaevents@gmail.com</a></div>
     <div><strong>Phone:</strong> <a href="tel:+447952941489">07952 941489</a></div>
@@ -367,15 +414,20 @@ footer a { color:#e8d9c4; }
     <textarea name="Message" placeholder="Tell us a little about your plans"></textarea>
     <button type="submit">Send Enquiry</button>
   </form>
+
   <p class="note">The enquiry form opens your email app with a draft. It does not submit or store enquiries on this website.</p>
 </section>
+
 </main>
 
 <footer>
-  <div class="footer-logo">YA EVENTS</div>
-  <p>Every detail, beautifully planned.</p>
+  <img class="footer-logo" src="logo.jpeg" alt="YA EVENTS logo">
+  <p>Carefully planned. Effortlessly celebrated.</p>
   <p>Event Planning & Coordination · All London</p>
-  <p>Instagram: <a href="https://www.instagram.com/y.aevents/">@Y.aevents</a> · TikTok: <a href="https://www.tiktok.com/@y.aevents">@y.aevents</a></p>
+  <p>
+    Instagram: <a href="https://www.instagram.com/y.aevents/">@Y.aevents</a>
+    · TikTok: <a href="https://www.tiktok.com/@y.aevents">@y.aevents</a>
+  </p>
   <p>© 2026 YA EVENTS. All rights reserved.</p>
 </footer>
 
