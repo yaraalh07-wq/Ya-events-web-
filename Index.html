@@ -1,0 +1,383 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="YA EVENTS offers elegant event planning and coordination across London. Weddings, Nikkahs, engagements and private celebrations.">
+<title>YA EVENTS | Every detail, beautifully planned.</title>
+<style>
+:root {
+  --cream:#f8f5ef;
+  --sand:#e9e0d3;
+  --taupe:#817467;
+  --ink:#39342f;
+  --gold:#b49a72;
+}
+* { box-sizing:border-box; }
+html { scroll-behavior:smooth; }
+body {
+  margin:0;
+  background:var(--cream);
+  color:var(--ink);
+  font-family:Arial, sans-serif;
+  line-height:1.7;
+}
+header {
+  padding:22px 7%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  border-bottom:1px solid #e6ded3;
+  background:var(--cream);
+  position:sticky;
+  top:0;
+  z-index:10;
+}
+.logo {
+  font-family:Georgia,serif;
+  font-size:27px;
+  letter-spacing:4px;
+}
+nav a {
+  color:var(--ink);
+  text-decoration:none;
+  margin-left:22px;
+  font-size:12px;
+  letter-spacing:1px;
+  text-transform:uppercase;
+}
+.hero {
+  min-height:590px;
+  padding:100px 8%;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  text-align:center;
+  background:linear-gradient(135deg,#eee6da,#faf7f1 55%,#e6d9c8);
+}
+.eyebrow {
+  color:var(--taupe);
+  letter-spacing:4px;
+  text-transform:uppercase;
+  font-size:11px;
+}
+h1,h2,h3 {
+  font-family:Georgia,serif;
+  font-weight:normal;
+}
+h1 {
+  font-size:clamp(42px,7vw,76px);
+  line-height:1.12;
+  margin:22px auto;
+  max-width:850px;
+}
+.hero p {
+  max-width:550px;
+  margin:0 auto 30px;
+  color:#655d54;
+}
+.button {
+  display:inline-block;
+  background:var(--ink);
+  color:white;
+  text-decoration:none;
+  padding:14px 27px;
+  letter-spacing:1px;
+  font-size:12px;
+  text-transform:uppercase;
+  margin:8px;
+}
+.button.light {
+  background:transparent;
+  color:var(--ink);
+  border:1px solid var(--taupe);
+}
+section { padding:85px 8%; }
+.section-heading {
+  text-align:center;
+  max-width:680px;
+  margin:0 auto 45px;
+}
+.section-heading h2 {
+  font-size:clamp(32px,5vw,47px);
+  margin:10px 0;
+}
+.section-heading p { color:#756d63; }
+.about {
+  max-width:850px;
+  margin:auto;
+  text-align:center;
+}
+.about p { color:#6f675e; }
+.services { background:#eee8df; }
+.cards {
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:22px;
+  max-width:1100px;
+  margin:auto;
+}
+.card {
+  background:#faf8f4;
+  padding:32px 25px;
+  border:1px solid #e5ddd2;
+}
+.card h3 { font-size:25px; }
+.price {
+  font-family:Georgia,serif;
+  font-size:29px;
+  color:var(--taupe);
+}
+.card p,.card li { color:#6f675e; font-size:14px; }
+.card ul { padding-left:18px; }
+.note {
+  text-align:center;
+  margin:35px auto 0;
+  max-width:700px;
+  color:#756d63;
+  font-size:14px;
+}
+.consultation {
+  background:#e6ddd0;
+  text-align:center;
+}
+.consultation h2 { font-size:42px; }
+.consultation .price { font-size:35px; }
+.weddings {
+  text-align:center;
+  background:#faf8f4;
+}
+.weddings p {
+  max-width:700px;
+  margin:15px auto;
+  color:#6f675e;
+}
+.steps {
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+  gap:25px;
+  max-width:1000px;
+  margin:auto;
+  text-align:center;
+}
+.step-number {
+  font-family:Georgia,serif;
+  color:var(--gold);
+  font-size:34px;
+}
+.step h3 { font-size:23px; }
+.step p { color:#756d63; font-size:14px; }
+.halal {
+  background:#eee8df;
+  text-align:center;
+}
+.halal p {
+  max-width:720px;
+  margin:15px auto;
+  color:#6f675e;
+}
+.contact {
+  text-align:center;
+  background:#faf8f4;
+}
+.contact-details {
+  margin:30px auto;
+  line-height:2.2;
+}
+.contact a { color:var(--taupe); }
+form {
+  max-width:600px;
+  margin:35px auto 0;
+  display:grid;
+  gap:12px;
+}
+input,textarea,select {
+  width:100%;
+  padding:14px;
+  border:1px solid #d8cec1;
+  background:white;
+  font:inherit;
+  color:var(--ink);
+}
+textarea { min-height:120px; }
+form button {
+  border:0;
+  cursor:pointer;
+  background:var(--ink);
+  color:white;
+  padding:16px;
+  letter-spacing:1px;
+  text-transform:uppercase;
+}
+footer {
+  background:var(--ink);
+  color:#eee7dc;
+  padding:35px 8%;
+  text-align:center;
+  font-size:12px;
+}
+footer .footer-logo {
+  font-family:Georgia,serif;
+  letter-spacing:4px;
+  font-size:24px;
+}
+footer a { color:#e8d9c4; }
+@media(max-width:650px) {
+  header { flex-direction:column; gap:12px; }
+  nav a { margin:0 7px; font-size:10px; }
+  .hero { min-height:500px; padding:75px 7%; }
+  section { padding:65px 7%; }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">YA EVENTS</div>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#weddings">Weddings</a>
+    <a href="#contact">Enquire</a>
+  </nav>
+</header>
+
+<main>
+<section class="hero">
+  <div class="eyebrow">Event Planning & Coordination · London</div>
+  <h1>Every detail,<br>beautifully planned.</h1>
+  <p>Thoughtful event planning for life's most meaningful celebrations. Personal, considered and beautifully organised.</p>
+  <div>
+    <a class="button" href="#contact">Enquire Now</a>
+    <a class="button light" href="#services">Explore Services</a>
+  </div>
+</section>
+
+<section id="about">
+  <div class="about">
+    <div class="eyebrow">A little about us</div>
+    <h2 style="font-family:Georgia,serif;font-size:42px;font-weight:normal;">Welcome to YA EVENTS</h2>
+    <p>We believe every celebration deserves care, creativity and attention to detail. YA EVENTS provides thoughtful planning and coordination to help make your occasion feel effortless from the first conversation to the final detail.</p>
+    <p>From intimate gatherings to larger celebrations, we take the time to understand your vision and help bring it together.</p>
+  </div>
+</section>
+
+<section class="services" id="services">
+  <div class="section-heading">
+    <div class="eyebrow">Our services</div>
+    <h2>Planning made personal</h2>
+    <p>Choose the level of planning support that suits your celebration.</p>
+  </div>
+  <div class="cards">
+    <article class="card">
+      <div class="eyebrow">Intimate celebrations</div>
+      <h3>Small Events</h3>
+      <div class="price">£295</div>
+      <p>For celebrations of up to 50 guests.</p>
+      <ul>
+        <li>Initial planning consultation</li>
+        <li>Budget and planning guidance</li>
+        <li>Supplier research</li>
+        <li>Event schedule planning</li>
+      </ul>
+    </article>
+    <article class="card">
+      <div class="eyebrow">Growing celebrations</div>
+      <h3>Medium Events</h3>
+      <div class="price">£495</div>
+      <p>For celebrations of 51–100 guests.</p>
+      <ul>
+        <li>Planning consultation</li>
+        <li>Budget guidance</li>
+        <li>Supplier research and communication</li>
+        <li>Event timeline and logistics</li>
+      </ul>
+    </article>
+    <article class="card">
+      <div class="eyebrow">Larger occasions</div>
+      <h3>Large Events</h3>
+      <div class="price">£795</div>
+      <p>For celebrations of 101–200 guests.</p>
+      <ul>
+        <li>Detailed planning support</li>
+        <li>Supplier research and liaison</li>
+        <li>Planning schedule</li>
+        <li>Logistics and coordination planning</li>
+      </ul>
+    </article>
+  </div>
+  <p class="note">Introductory planning fees. Final quotes depend on your event, requirements and agreed scope. Events over 200 guests are quoted individually. Prices cover planning services only, not venue or supplier costs, décor, styling, setup or event-day attendance.</p>
+</section>
+
+<section class="consultation">
+  <div class="eyebrow">Your ideas, our guidance</div>
+  <h2>One-Hour Consultation</h2>
+  <div class="price">£40</div>
+  <p>Have ideas but need a little direction? Let's talk through your vision, budget, suppliers and next steps in a dedicated one-hour session.</p>
+  <a class="button" href="mailto:yaevents@gmail.com?subject=One-Hour%20Consultation%20Enquiry">Book a Consultation</a>
+</section>
+
+<section class="weddings" id="weddings">
+  <div class="eyebrow">Meaningful moments</div>
+  <h2 style="font-size:43px;">Weddings & Nikkahs</h2>
+  <p>From intimate Nikkahs to beautiful wedding celebrations, we offer considered planning support shaped around your priorities, traditions and vision.</p>
+  <p>Halal-conscious planning is available, with thoughtful consideration of your preferences and requirements.</p>
+  <a class="button" href="#contact">Discuss Your Celebration</a>
+</section>
+
+<section>
+  <div class="section-heading">
+    <div class="eyebrow">The experience</div>
+    <h2>Simple from the start</h2>
+    <p>A clear, considered approach to planning your event.</p>
+  </div>
+  <div class="steps">
+    <div class="step"><div class="step-number">01</div><h3>Enquire</h3><p>Tell us about your event and what you have in mind.</p></div>
+    <div class="step"><div class="step-number">02</div><h3>Consult</h3><p>We'll discuss your vision, priorities and budget.</p></div>
+    <div class="step"><div class="step-number">03</div><h3>Proposal</h3><p>Receive a tailored proposal and clear planning fee.</p></div>
+    <div class="step"><div class="step-number">04</div><h3>Plan</h3><p>We help organise the details and keep things on track.</p></div>
+  </div>
+</section>
+
+<section class="halal">
+  <div class="eyebrow">Considered planning</div>
+  <h2 style="font-size:40px;">Celebrations that feel like you</h2>
+  <p>Every client is different. We take the time to understand your preferences and can provide halal-conscious planning support, including consideration of your chosen arrangements and requirements.</p>
+</section>
+
+<section class="contact" id="contact">
+  <div class="eyebrow">Let's begin</div>
+  <h2 style="font-size:44px;">Tell us what you're planning</h2>
+  <p>We'd love to hear about your celebration.</p>
+  <div class="contact-details">
+    <div><strong>Email:</strong> <a href="mailto:yaevents@gmail.com">yaevents@gmail.com</a></div>
+    <div><strong>Phone:</strong> <a href="tel:+447952941489">07952 941489</a></div>
+    <div><strong>Location:</strong> All London</div>
+    <div><strong>Instagram:</strong> <a href="https://www.instagram.com/y.aevents/" target="_blank" rel="noopener">@Y.aevents</a></div>
+    <div><strong>TikTok:</strong> <a href="https://www.tiktok.com/@y.aevents" target="_blank" rel="noopener">@y.aevents</a></div>
+  </div>
+
+  <form action="mailto:yaevents@gmail.com" method="post" enctype="text/plain">
+    <input type="text" name="Name" placeholder="Your name" required>
+    <input type="email" name="Email" placeholder="Your email address" required>
+    <input type="text" name="Event type" placeholder="What are you celebrating?">
+    <input type="text" name="Event date" placeholder="Preferred event date">
+    <input type="text" name="Guest numbers" placeholder="Approximate number of guests">
+    <textarea name="Message" placeholder="Tell us a little about your plans"></textarea>
+    <button type="submit">Send Enquiry</button>
+  </form>
+  <p class="note">The enquiry form opens your email app with a draft. It does not submit or store enquiries on this website.</p>
+</section>
+</main>
+
+<footer>
+  <div class="footer-logo">YA EVENTS</div>
+  <p>Every detail, beautifully planned.</p>
+  <p>Event Planning & Coordination · All London</p>
+  <p>Instagram: <a href="https://www.instagram.com/y.aevents/">@Y.aevents</a> · TikTok: <a href="https://www.tiktok.com/@y.aevents">@y.aevents</a></p>
+  <p>© 2026 YA EVENTS. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
